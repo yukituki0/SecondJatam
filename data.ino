@@ -1,3 +1,15 @@
+/*
+ * =============================================
+ * 송신기 (TX) - XIAO ESP32S3 + Wio-SX1262
+ * 
+ * serial terminal에 's' 입력 → LoRa "START" 송신
+ * serial terminal에 'e' 입력 → LoRa "STOP" 송신
+ * 
+ * 연결 핀:
+ *   없음
+ * =============================================
+ */
+
 #include <RadioLib.h>
 
 SX1262 radio = new Module(41, 39, 42, 40);
